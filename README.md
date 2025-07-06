@@ -39,16 +39,6 @@ View live project at: [https://molo-m.github.io/Expense-Tracker/](https://molo-m
 
 ---
 
-## ✨ Bonus Features (Optional but Valuable)
-
-* 🔍 Filter expenses by:
-
-  * Date range (last 7 days, this month, etc.)
-  * Keyword (search bar)
-* 📈 Visual bar/line chart of monthly totals (if you want a challenge)
-
----
-
 ## 💾 Data Structure (in JS)
 
 Each expense can be stored as:
