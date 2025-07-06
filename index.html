@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <div class="main bg-blue-900 flex flex-col justify-center items-center">
+        <!-- Section 1 -->
+        <div class="top_head bg-black flex justify-between">
+            <!-- Section 1.1: The header on the top left  -->
+            <div class="left_header sub_head text-white">
+                <h1 class="text-2xl">Expense Tracker</h1>
+                <p>A clean, interactive tracker to track your expenses</p>
+            </div>
+            <!-- Section 1.2: The header on the top right  -->
+            <div class="right_head sub_head flex justify-center">
+                <button type="button" class="add_expense_button" onclick="display_inputCard()">Add Expense</button>
+            </div>
+        </div>
+        <!-- Section 2: The input card should appear to allow user to enter their expenses  -->
+        <div id="hiddenCard" class="expenses_input  flex flex-col border h-72 justify-evenly items-center rounded-md bg-gray-700 p-3 absolute top-0 hidden">
+            <div class="head w-full flex justify-between">
+                <h1 class="text-white font-bold text-xl">Add your Expense:</h1>
+                <button type="button" class="go_back" onclick="display_inputCard()">X</button>
+            </div>
+            <input type="text" name="" id="title" placeholder="Title (e.g. “Groceries”)">
+            <input type="number" name="" id="amount" placeholder="Amount (e.g 10,000)">
+            <input type="date" name="" id="date" placeholder="Date">
+            <button type="button" class="add_expense_button" onclick="add_expense()">Add</button>
+        </div>
+        <!-- Bottom Container  -->
+         <div class="bottom_container">
+            <!-- Section 3: The list of expenses  -->
+            <div class="expense_container border border-black h-screen bg-white">
+                <!-- Section 3.1: The list of expenses  -->
+                <div id="example" class="expense_item w-full flex justify-evenly p-2 border border-black">
+                    <div class="expense_title flex items-center">
+                        <p class="text-xl font-bold">Buy Groceries</p>
+                    </div>
+                    <div class="expense_details flex flex-col items-center">
+                        <p class="expense_date text-sm text-gray-400">05/07/2025</p>
+                        <p class="expense_amount font-bold text-xl text-blue-700">20000 RWF</p>
+                    </div>
+                    <button type="button" class="expense_delete" onclick="deleteExpenseSelf()">Delete</button>
+                </div>
+            </div>
+            <!-- Section 4: Calculating the total -->
+            <div class="total w-full border bg-blue-300 p-2 flex justify-center sticky bottom-0">
+                <p class="text-xl font-bold">Total: </p>
+            </div>
+
+         </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
