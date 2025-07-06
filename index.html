@@ -9,9 +9,9 @@
 <body>
     <div class="main bg-blue-900 flex flex-col justify-center items-center">
         <!-- Section 1 -->
-        <div class="top_head bg-black flex justify-between">
+        <div class="top_head bg-black flex flex-col sm:flex-row justify-between">
             <!-- Section 1.1: The header on the top left  -->
-            <div class="left_header sub_head text-white">
+            <div class="left_header sub_head text-white flex flex-col items-center sm:items-start">
                 <h1 class="text-2xl">Expense Tracker</h1>
                 <p>A clean, interactive tracker to track your expenses</p>
             </div>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <!-- Section 2: The input card should appear to allow user to enter their expenses  -->
-        <div id="hiddenCard" class="expenses_input  flex flex-col border h-72 justify-evenly items-center rounded-md bg-gray-700 p-3 absolute top-0 hidden">
+        <div id="hiddenCard" class="expenses_input  flex flex-col border h-72 justify-evenly items-center rounded-md bg-gray-700 p-3 absolute top-0 hidden w-70">
             <div class="head w-full flex justify-between">
                 <h1 class="text-white font-bold text-xl">Add your Expense:</h1>
                 <button type="button" class="go_back" onclick="display_inputCard()">X</button>

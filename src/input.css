@@ -12,7 +12,7 @@
     }
 
     .top_head, .bottom_container {
-        @apply w-160;
+        @apply w-full max-w-3xl;
     }
 
     .expense_delete {
@@ -20,12 +20,12 @@
     }
 
     .go_back {
-        @apply text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900;
+        @apply text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-1 py-1 text-center me-1 mb-1 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900;
     }
 }
 
 @layer utilities {
     input {
-        @apply w-80 bg-white p-2;
+        @apply w-full max-w-sm bg-white p-2;
     }
 }
