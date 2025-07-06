@@ -49,45 +49,16 @@ View live project at: [https://molo-m.github.io/Expense-Tracker/](https://molo-m
 
 ---
 
-## 🧱 UI Plan (Tailwind-Powered)
-
-### 📦 Layout Suggestions:
-
-```html
-<div class="max-w-xl mx-auto p-6 bg-white shadow rounded">
-  <!-- Add Expense Form -->
-  <!-- Expense List -->
-  <!-- Summary Section -->
-</div>
-```
-
-Use Tailwind components like:
-
-* `bg-gray-100`, `p-4`, `rounded-lg`, `flex justify-between`, `text-red-600` for delete buttons
-* Responsive layout (`sm:`, `md:` prefixes)
-
----
-
 ## 💾 Data Structure (in JS)
 
 Each expense can be stored as:
 
 ```js
 {
-  id: 'abc123',
   title: 'Internet',
   amount: 25000,
   date: '2025-06-16'
 }
-```
-
-Saved to `localStorage` as a list:
-
-```js
-const expenses = [
-  { ... },
-  { ... }
-];
 ```
 
 ---
@@ -124,17 +95,6 @@ Use Tailwind to create nice "card" or row layouts.
 
 ---
 
-### 📅 **DAY 4** – Add LocalStorage
-
-* On page load:
-
-  * Load saved expenses (if any)
-* On add/delete:
-
-  * Update `localStorage.setItem("expenses", JSON.stringify(...))`
-
----
-
 ### 📅 **DAY 5** – Polish, Refactor, Deploy
 
 * Separate logic into functions
@@ -145,30 +105,12 @@ Use Tailwind to create nice "card" or row layouts.
 
 ---
 
-## 📂 Suggested Folder Structure
-
-```
-expense-tracker/
-├── index.html
-├── js/
-│   └── app.js
-├── css/
-│   └── style.css (optional overrides)
-├── assets/
-│   └── icons/
-├── README.md
-└── tailwind.config.js (if using CLI)
-```
-
----
-
 ## 📋 Project Checklist
 
 * [ ] Add Expense form works with validation
 * [ ] Expenses displayed dynamically
 * [ ] Delete functionality works
 * [ ] Total is accurate and updates live
-* [ ] All data saved to `localStorage`
 * [ ] Fully responsive and styled with Tailwind
 * [ ] GitHub repo with README
 * [ ] Live deployment
