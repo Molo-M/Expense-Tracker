@@ -6,6 +6,10 @@ Build a clean, interactive, persistent expense tracker with **Tailwind for layou
 
 ---
 
+View live project at: [https://molo-m.github.io/Expense-Tracker/](https://molo-m.github.io/Expense-Tracker/)
+
+---
+
 ## 🧩 Core Features
 
 ### ➕ Add Expense
